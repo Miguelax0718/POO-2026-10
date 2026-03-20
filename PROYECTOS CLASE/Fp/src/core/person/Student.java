@@ -10,40 +10,54 @@ package core.person;
  */
 public class Student {
     
-    private String nombre;
-    private String apellido;
-    private String carrera;
-    private int semestre;
+    private String name;
+    private int code;
+    private String career;
+    private int semester;
+    private int age;
 
-    public Student(String nombre, String apellido, String carrera, int semestre) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.carrera = carrera;
-        this.semestre = semestre;
+    public Student(String name, int code, String career, int semester, int age) {
+        this.name = name;
+        this.code = code;
+        this.career = career;
+        this.semester = semester;
+        this.age = age;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public String getApellido() {
-        return apellido;
+    public int getCode() {
+        return code;
     }
 
-    public String getCarrera() {
-        return carrera;
+    public String getCareer() {
+        return career;
     }
 
-    public int getSemestre() {
-        return semestre;
+    public int getSemester() {
+        return semester;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public int getAge() {
+        return age;
+    }
+
+    public void setCareer(String career) {
+        this.career = career;
+    }
+
+    public void setSemester(int semester) {
+        this.semester = semester;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
     
-    
-    
-    
+    public void callStudent(Student student) {
+        System.out.println("Hello " + student.getName());
+    }
     
 }
